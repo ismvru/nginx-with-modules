@@ -4,8 +4,8 @@ FROM nginx:${NGINX_VERSION} as builder
 WORKDIR /code
 RUN apt-get -y update && apt-get -y install build-essential git wget libpcre2-dev libmaxminddb-dev zlib1g-dev libbrotli-dev
 RUN git clone https://github.com/leev/ngx_http_geoip2_module.git \
-    && git clone https://github.com/google/ngx_brotli.git \
-    WORKDIR nginx
+    && git clone https://github.com/google/ngx_brotli.git
+WORKDIR nginx
 RUN wget "http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz" \
     && tar xf "nginx-${NGINX_VERSION}.tar.gz" -C "." --strip-components=1 \
     && ./configure --with-compat --add-dynamic-module=../ngx_http_geoip2_module --with-stream --add-dynamic-module=../ngx_brotli \
