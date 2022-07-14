@@ -47,6 +47,8 @@ jobs:
           load: true
           tags: ismv/nginx-with-modules:latest
           labels: ${{ steps.meta.outputs.labels }}
+          build-args: |
+            NGINX_VERSION=stable
 
       - uses: azure/container-scan@v0
         with:
