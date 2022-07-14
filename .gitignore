@@ -1,0 +1,6 @@
+.env
+GeoIP
+nginx
+nginx*.tar.gz
+ngx_http_geoip2_module
+ngx_brotli

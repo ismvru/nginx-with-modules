@@ -1,0 +1,3 @@
+AccountID ${MM_ACCOUNT_ID}
+LicenseKey ${MM_LICENSE_KEY}
+EditionIDs ${MM_EDITIONS}

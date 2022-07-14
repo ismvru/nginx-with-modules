@@ -1,0 +1,5 @@
+general:
+  vulnerabilities:
+    - CVE-2019-8457
+    - CVE-2022-1586
+    - CVE-2022-1587
