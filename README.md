@@ -1,5 +1,8 @@
 # Nginx with GeoIP2 and Brotli modules in docker
 <!-- markdownlint-disable line-length -->
+[![Docker Image CI](https://github.com/ismvru/nginx-with-modules/actions/workflows/docker-image.yml/badge.svg)](https://github.com/ismvru/nginx-with-modules/actions/workflows/docker-image.yml)
+![Docker Pulls](https://img.shields.io/docker/pulls/ismv/nginx-with-modules)
+
 - [Nginx with GeoIP2 and Brotli modules in docker](#nginx-with-geoip2-and-brotli-modules-in-docker)
   - [Usage](#usage)
     - [Start](#start)
